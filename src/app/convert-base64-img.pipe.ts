@@ -7,9 +7,6 @@ export class Base64Pipe implements PipeTransform {
   constructor() {}
 
   public transform(value: any, contentType: string): any {
-    if(value){
-      
-    }
     var base64Content = `data:${contentType};base64,${value}`;
     return base64Content;
   }
